@@ -1,0 +1,83 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: Arizona;
+    src: url('fonts/ABCArizonaFlareVariable.en.woff2');
+}
+
+@font-face {
+    font-family: Inter;
+    src: url('fonts/InterVariable.en.woff2');
+}
+
+/* Styling */
+:root {
+    --brand-primary-color: #4a2dc5;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+}
+
+body {
+    font-family: Inter;
+}
+
+/* header section */
+header {
+    height: 8vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 4vw;
+}
+
+.header-left {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.header-left a img {
+    width: 4rem;
+}
+
+.header-left ul {
+    display: flex;
+    gap: 1rem;
+    font-weight: 700;
+}
+
+.header-left ul li:hover {
+    color: var(--brand-primary-color);
+    cursor: pointer;
+}
+
+.header-right {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.createAccount {
+    background-color: var(--brand-primary-color);
+    color: #fff;
+    padding: 0.5rem 1rem;
+    border-radius: 1rem;
+    cursor: pointer;
+    font-weight: 500;
+}
+
+.signIn {
+    color: var(--brand-primary-color);
+    font-weight: 500;
+    cursor: pointer;
+}
